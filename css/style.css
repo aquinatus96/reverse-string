@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkorange;
+}
+
+#container-box {
+    position: absolute;
+    height: 200px;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fd7f00;
+    text-align: center;
+}
+
+#container-box #reverse-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+}
+
+input {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    margin-bottom: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#to-reverse {
+    width: 200px;
+}
+
+#to-reverse::-webkit-input-placeholder {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+#btn-reverse {
+    background-color: blue;
+    width: 80px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#btn-reverse:hover {
+    background-color: #1818a2;
+}
+
+
+#reverse-result {
+    width: 280px;
+    text-align: center;
+    font-size: 21px;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#reverse-result::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.2);
+}
